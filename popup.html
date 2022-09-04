@@ -1,9 +1,43 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="button.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=PT+Serif&display=swap");
+    </style>
+
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <link rel="stylesheet" href="input.css" />
   </head>
+
   <body>
-    <button id="changeColor"></button>
+    <!-- your content here... -->
+    <!-- Set event Listener for enter key press -->
+    <div class="mainTitle" align = "center">
+      <h1>Ducky</h1>
+    </div>
+
+    <!-- text gets injected here -->
+    <div class="textBox">
+    <!-- text gets injected here -->
+        <!-- <svg class="corner" viewBox="0 0 65 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M35 3.5L65 6.5V62L0 0L35 3.5Z" fill="white"/>
+        </svg> -->
+      </div>
+
+    <div class="duckyImage" align = "center">
+      <img id= "ducky" src= "/assets/defaultDuck.png">
+    </div>
+    
+    <h2 id="output"></h2>
+    <script src="background.js"></script>
+    <!-- <a href="something" class="button1">Button</a> -->
   </body>
 </html>

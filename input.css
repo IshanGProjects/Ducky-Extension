@@ -1,0 +1,50 @@
+body {
+    height: 400px;
+    width: 250px;
+    background: #3498db;
+    padding: 3em;
+    font-family: 'Sora', monospace;
+  }
+  
+  .mainTitle h1 {color:white;padding:10px;}
+  
+/*
+Text box code:
+*/
+
+.textBox span {
+  opacity: 0;
+}
+.textBox span.revealed {
+  opacity: 1;
+}
+.textBox span.green {
+  color: #27ae60;
+}
+.textBox span.red {
+  color: #ff0000;
+}
+
+/* Demo styles */
+/* body {
+  background: #3498db;
+  padding: 3em;
+  font-family: 'Sora', monospace;
+} */
+.textBox {
+  font-size: 6vw;
+  word-spacing: 0.2em;
+  margin: 0 auto;
+  background: #fff;
+  padding: 1em;
+  border-bottom: 1vw solid #0e6dad;
+  position:relative;
+  line-height: 1.2em;
+}
+.corner {
+  position:absolute;
+  width: 10vw;
+  right:2vw;
+  bottom:0;
+  transform: translateY(80%); 
+}
