@@ -3,9 +3,8 @@
     "description": "This is a coding debugging companion",
     "version": "1.0",
     "manifest_version": 3,
-    "background": {
-        "scripts": ["background.js"],
-        "persistant": false
+    "background ": {
+      "service_worker": "background.js"
     },
     "permissions": ["storage"],
     "action": {
