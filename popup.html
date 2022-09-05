@@ -47,12 +47,13 @@
       </div>
     </div>
 
-    <div id="screen">
+    <div id="screen" style="flex-flow: wrap;" >
       <!-- <p class="terminalFont">root@10.0.0.1:~$</p> -->
-      <textarea id="unselectable" readonly cols="15" style="resize: none;">root@10.0.0.1:~$</textarea>
-      <textarea class="freeText" style="resize: none;" rows= "100" cols= "30.5"></textarea>
-  </div>
-    
+      <!-- <label id="screenLabel" for="freeText">root@10.0.0.1:~$</label> -->
+      <textarea class="terminalLabel" readonly row="1" cols="15" style="resize: none;">root@10.0.0.1:~$</textarea>
+      <textarea class="freeText" id="freeText" style="resize: none;" rows= "1" cols= 15></textarea>
+    </div>
+  
     <h2 id="output"></h2>
     <script src="background.js"></script>
     <!-- <a href="something" class="button1">Button</a> -->

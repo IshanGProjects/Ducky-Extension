@@ -105,6 +105,7 @@ Termnial Styling Code
   border-radius: 2%;
   margin: 0 auto;
   padding: 1px;
+  display: flex;
 }
 
 .terminalFont {
@@ -117,7 +118,7 @@ Termnial Styling Code
 
 .freeText {
   width: 300;
-  height: 450;
+  height: 10;
   color: rgb(0, 0, 0);
   font-family: monospace;
   font-size: 15px;
@@ -125,9 +126,8 @@ Termnial Styling Code
   position: static;
   border-color: #ffffff;
   box-shadow: none;
-  outline:none;
+  /* outline:none; */
 }
 
-/* .freeText::placeholder{
-  text-align: left;
-} */
+
+
