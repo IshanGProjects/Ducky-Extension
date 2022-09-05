@@ -11,7 +11,7 @@ function duckyColor(imageSelction) {
   }
 }
 
-duckyColor("blue");
+duckyColor("yellow");
 
 /*
 Function to Render text 

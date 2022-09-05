@@ -30,11 +30,28 @@
         <!-- <svg class="corner" viewBox="0 0 65 62" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M35 3.5L65 6.5V62L0 0L35 3.5Z" fill="white"/>
         </svg> -->
-      </div>
+    </div>
 
     <div class="duckyImage" align = "center">
       <img id= "ducky" src= "/assets/defaultDuck.png">
     </div>
+
+    <div class="terminal" align = "left" >
+      <div id="bar">
+        <div id="red">
+        </div>
+        <div id="yellow">
+        </div>
+        <div id="green">
+        </div>
+      </div>
+    </div>
+
+    <div id="screen">
+      <!-- <p class="terminalFont">root@10.0.0.1:~$</p> -->
+      <textarea id="unselectable" readonly cols="15" style="resize: none;">root@10.0.0.1:~$</textarea>
+      <textarea class="freeText" style="resize: none;" rows= "100" cols= "30.5"></textarea>
+  </div>
     
     <h2 id="output"></h2>
     <script src="background.js"></script>
