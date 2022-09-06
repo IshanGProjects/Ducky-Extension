@@ -81,16 +81,20 @@ var message;
 textArea.addEventListener("keypress", function(e){
    if(e.key === 'Enter'){
       enterEvent();
+      newFunction();
       console.log("Enter event listener");
+      textArea.value = "";
    }
 } )
 
 function enterEvent(){
    message = textArea.value;
-   console.log(message)
    return message;
+
 }
 
-
-
-console.log(enterEvent());
+function newFunction() {
+   if(enterEvent() == "yes" || "Yes" || "y" ){
+      console.log("Ok I will help you");
+   }
+}
