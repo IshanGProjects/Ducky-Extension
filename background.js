@@ -27,12 +27,17 @@ var speeds = {
 };
 
 //Default text prompt
-var textLines = [
+
+var defaultText = [
    { speed: speeds.slow, string: "Oh, hello!" },
    { speed: speeds.pause, string: "", pause: true },
-   { speed: speeds.normal, string: "Are you having trouble coding?" },
+   // { speed: speeds.normal, string: "Are you having trouble coding?" },
    { speed: speeds.pause, string: "", pause: true },
 ];
+
+
+
+var textLines = defaultText
 
 
 var characters = [];
@@ -81,7 +86,8 @@ var message;
 textArea.addEventListener("keypress", function(e){
    if(e.key === 'Enter'){
       enterEvent();
-      newFunction();
+      intro();
+      changeColor();
       console.log("Enter event listener");
       textArea.value = "";
    }
@@ -93,8 +99,18 @@ function enterEvent(){
 
 }
 
-function newFunction() {
+function intro() {
    if(enterEvent() == "yes" || "Yes" || "y" ){
       console.log("Ok I will help you");
    }
 }
+
+function changeColor() {
+   if(enterEvent() == "blue"){
+      duckyColor("blue");
+   }
+   else{
+      duckyColor("yellow");
+   }
+}
+
