@@ -26,6 +26,7 @@ var speeds = {
    superFast: 10
 };
 
+//Default text prompt
 var textLines = [
    { speed: speeds.slow, string: "Oh, hello!" },
    { speed: speeds.pause, string: "", pause: true },
@@ -68,7 +69,28 @@ function revealOneCharacter(list) {
    }
 }
 
-//Kick it off
+//Kick it off for intial text rendering
 setTimeout(() => {
    revealOneCharacter(characters);   
 }, 600)
+
+
+const textArea = document.getElementById("freeText");
+var message;
+
+textArea.addEventListener("keypress", function(e){
+   if(e.key === 'Enter'){
+      enterEvent();
+      console.log("Enter event listener");
+   }
+} )
+
+function enterEvent(){
+   message = textArea.value;
+   console.log(message)
+   return message;
+}
+
+
+
+console.log(enterEvent());

@@ -118,7 +118,7 @@ Termnial Styling Code
 
 .freeText {
   width: 300;
-  height: 10;
+  height: 300;
   color: rgb(0, 0, 0);
   font-family: monospace;
   font-size: 15px;
@@ -126,8 +126,17 @@ Termnial Styling Code
   position: static;
   border-color: #ffffff;
   box-shadow: none;
-  /* outline:none; */
+  word-break: break-all;
+  overflow: auto;
+  outline:none;
 }
+
+/*
+blinking cursor code
+*/
+
+
+
 
 
 
